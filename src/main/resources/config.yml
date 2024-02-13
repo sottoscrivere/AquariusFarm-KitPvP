@@ -1,0 +1,123 @@
+minesWorld: "world"
+Mines:
+  pickaxeMines:
+    regenerationTime: 1000 #in millisecondi //calcolo (20 * x) / 1000
+  axeMines:
+    regenerationTime: 1000
+  shovelMines:
+    regenerationTime: 1000
+  hoeMines:
+    regenerationTime: 2000
+  pickaxeVipMines:
+    regenerationTime: 500
+  axeVipMines:
+    regenerationTime: 500
+  shovelVipMines:
+    regenerationTime: 500
+  hoeVipMines:
+    regenerationTime: 500
+
+Gui:
+  Sell:
+    name: "&bSell Gui"
+    slots: 54
+    compass:
+      name: "&6Ricompense"
+      lore:
+        - "&8&m------------------------------"
+        - ""
+        - "             &bDiamond Ore &7100$"
+        - "             &aEmerald Ore &7100$"
+        - "             &eGold Ore &7100$"
+        - "             &1Lapis Ore &7100$"
+        - "             &cRedstone Ore &7100$"
+        - "             &8Wood &7100$"
+        - "             &8Soul Sand &7100$"
+        - ""
+        - "&8&m------------------------------"
+    emerald:
+      name: "&a&lVENDI"
+      lore:
+        - "&7Clicca qui per confermare la tua vendita."
+Tools:
+  IRON_PICKAXE:
+    name: "&7Piccone di ferro"
+    lore:
+      - ""
+      - ""
+      - ""
+  DIAMOND_PICKAXE:
+    name: "&bPiccone di diamante"
+    lore:
+      - ""
+      - ""
+      - ""
+  IRON_AXE:
+    name: "&7Ascia di ferro"
+    lore:
+      - ""
+      - ""
+      - ""
+  DIAMOND_AXE:
+    name: "&bPiccone di diamante"
+    lore:
+      - ""
+      - ""
+      - ""
+  IRON_SHOVEL:
+    name: "&7Pala di ferro"
+    lore:
+      - ""
+      - ""
+      - ""
+  DIAMOND_SHOVEL:
+    name: "&bPala di diamante"
+    lore:
+      - ""
+      - ""
+      - ""
+  IRON_HOE:
+    name: "&7Pala di ferro"
+    lore:
+      - ""
+      - ""
+      - ""
+  DIAMOND_HOE:
+    name: "&bZappa di diamante"
+    lore:
+      - ""
+      - ""
+      - ""
+Minerals:
+  DIAMOND_ORE:
+    moneyAmount: 100
+  EMERALD_ORE:
+    moneyAmount: 100
+  GOLD_ORE:
+    moneyAmount: 100
+  LAPIS_ORE:
+    moneyAmount: 100
+  REDSTONE_ORE:
+    moneyAmount: 100
+  LOG: #Sarebbe il legno
+    moneyAmount: 100
+  SOULSAND:
+    moneyAmount: 100
+  WHEAT:
+    moneyAmount: 100
+Regions:
+  pickaxeMines:
+    - "pickaxe"
+  axeMines:
+    - "axe"
+  shovelMines:
+    - "shovel"
+  hoeMines:
+    - "hoe"
+  vipMines:
+    - "vip"
+# %player% = Player a cui devono andare i soldi.
+# %moneyAmount% = Quantità di soldi che deve ricevere
+giveMoneyCommand: "eco give %player% %moneyAmount%"
+Messages:
+  sold: "Hai venduto con successo gli item ottenendo %moneyAmount%$"

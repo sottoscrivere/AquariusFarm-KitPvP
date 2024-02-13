@@ -1,0 +1,6 @@
+name: AquariusFarm
+version: '${project.version}'
+main: me.noskidding_.aquariusfarm.AquariusFarm
+commands:
+  aquariusfarm:
+    aliases: [farm]
